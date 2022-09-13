@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Pessoa {
+  id            String   @id @default(uuid())
+  name          String
+  birthday      DateTime
+  phoneQuantity Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @default(now())
+
+  @@map("pessoa")
+}
+
+model PessoaTelefone {
+  id        String   @id @default(uuid())
+  personId  String
+  phone     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  @@map("pessoaTelefone")
+}
