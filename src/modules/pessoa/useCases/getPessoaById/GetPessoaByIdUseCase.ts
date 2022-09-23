@@ -5,6 +5,7 @@ export class GetPessoaByIdUseCase {
     const person = await prisma.pessoa.findUnique({
       where: { id },
       select: {
+        id: true,
         name: true,
         birthday: true,
       },
