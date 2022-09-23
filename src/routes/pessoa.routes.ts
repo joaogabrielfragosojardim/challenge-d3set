@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { GetPessoasController } from "../modules/pessoa/useCases/getPessoa/getPessoaController";
 import { GetPessoaByIdController } from "../modules/pessoa/useCases/getPessoaById/getPessoaByIdController";
-import { CreatePessoaController } from "../modules/pessoa/useCases/createPessoa/CreatePessoaController";
-import { EditPessoaController } from "../modules/pessoa/useCases/editPessoa/EditPessoaController";
+import { CreatePessoaController } from "../modules/pessoa/useCases/createPessoa/createPessoaController";
+import { EditPessoaController } from "../modules/pessoa/useCases/editPessoa/editPessoaController";
 
 const pessoaRoutes = Router();
 const getPessoasController = new GetPessoasController();
