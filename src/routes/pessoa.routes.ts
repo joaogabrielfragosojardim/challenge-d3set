@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { GetPessoasController } from "../modules/pessoa/useCases/getPessoa/GetPessoaController";
-import { GetPessoaByIdController } from "../modules/pessoa/useCases/getPessoaById/GetPessoaByIdController";
+import { GetPessoasController } from "../modules/pessoa/useCases/getPessoa/getPessoaController";
+import { GetPessoaByIdController } from "../modules/pessoa/useCases/getPessoaById/getPessoaByIdController";
 import { CreatePessoaController } from "../modules/pessoa/useCases/createPessoa/CreatePessoaController";
 import { EditPessoaController } from "../modules/pessoa/useCases/editPessoa/EditPessoaController";
 
