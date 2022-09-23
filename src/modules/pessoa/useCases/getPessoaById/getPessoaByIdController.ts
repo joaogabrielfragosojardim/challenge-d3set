@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { AppError } from "../../../../errors/AppError";
-import { GetPessoaByIdUseCase } from "./idUseCase";
+import { GetPessoaByIdUseCase } from "./getPessoaByIdUseCase";
 
 export class GetPessoaByIdController {
   async handle(req: Request, res: Response) {
